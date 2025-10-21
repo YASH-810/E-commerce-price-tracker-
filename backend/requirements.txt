@@ -6,4 +6,5 @@ python-dotenv
 gunicorn
 selenium
 webdriver_manager
-cors
+flask-cors
+flask
