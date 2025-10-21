@@ -59,7 +59,7 @@ export default function DashboardPage() {
 
       // Step 2: Trigger Python backend scraper
       await toast.promise(
-        fetch("https://e-commerce-price-tracker.onrender.com", { method: "POST" }),
+        fetch("https://e-commerce-price-tracker.onrender.com/update-products", { method: "POST" }),
         {
           loading: "Scraping product data...",
           success: "Product added and backend scraping started ✅",
@@ -77,7 +77,7 @@ export default function DashboardPage() {
     setLoading(true);
     try {
       await toast.promise(
-        fetch("https://e-commerce-price-tracker.onrender.com", {
+        fetch("https://e-commerce-price-tracker.onrender.com/update-products", {
           method: "POST",
         }),
         {
