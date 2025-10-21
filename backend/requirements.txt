@@ -7,4 +7,4 @@ gunicorn
 selenium
 webdriver_manager
 flask-cors
-flask
+Flask
