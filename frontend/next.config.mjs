@@ -1,15 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    optimizeCss: true, // enable CSS optimization safely
-  },
-  webpack: (config) => {
-    config.resolve.fallback = {
-      ...config.resolve.fallback,
-      fs: false,
-      path: false,
-    };
-    return config;
+ experimental: {
+    optimizeCss: false, // ⚠️ disable until lightningcss works
   },
   images: {
     remotePatterns: [
