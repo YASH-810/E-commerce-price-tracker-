@@ -5,3 +5,4 @@ flask
 python-dotenv
 gunicorn
 selenium
+webdriver_manager
