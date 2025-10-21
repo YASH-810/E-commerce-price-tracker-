@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
- experimental: {
-    optimizeCss: false, // ⚠️ disable until lightningcss works
-  },
+  experimental: {
+      optimizeCss: false, // disable CSS optimization to prevent lightningcss errors on Vercel
+    },
+  reactStrictMode: true,
   images: {
     remotePatterns: [
       {
