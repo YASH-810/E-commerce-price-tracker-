@@ -4,8 +4,12 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 from scraper import scrape_product
 
+
 # Flask App
 app = Flask(__name__)
+
+from flask_cors import CORS
+CORS(app)
 
 # Initialize Firebase Admin SDK
 cred = credentials.Certificate("serviceAccountKey.json")
